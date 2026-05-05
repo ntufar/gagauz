@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+# Dependencies & build (ekleme yaparsan)
+node_modules/
+dist/
+.cache/
+
+# Ortam
+.env
+.env.*
+
+# Editör
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,16 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
