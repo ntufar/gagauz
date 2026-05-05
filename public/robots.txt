@@ -1,0 +1,8 @@
+# robots.txt for Gagauz destan em masallar
+# Allow all search engines to index all content
+
+User-agent: *
+Allow: /
+
+# Sitemap (update this URL when you add a sitemap)
+# Sitemap: https://yourusername.github.io/gagauz/sitemap.xml
