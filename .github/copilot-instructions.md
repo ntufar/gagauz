@@ -9,7 +9,7 @@ Apply **`AGENTS.md`** at the repository root as the **authoritative** guide for 
 - **No i18n sprawl**: Do not add locale JSON / language toggles unless the maintainer explicitly asks.
 - **Links and assets**: Prefer **relative** URLs so the site works on GitHub project Pages paths.
 - **Secrets**: Never commit tokens, API keys, or private keys. This site is static Pages — no repo secrets required.
-- **Branch**: Treat **`main`** as the publishing branch.
+- **Branch**: Workflow deploys on **`main`** or **`master`** (match the repo default branch).
 
 ## Layout reminder
 

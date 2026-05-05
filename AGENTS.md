@@ -11,7 +11,7 @@ A **static** website of Gagauz stories, legends, and tales. It is **single-langu
 | Path | Purpose |
 |------|--------|
 | **`public/`** | **Deployable site root.** GitHub Pages uploads **only** this folder. Put HTML, CSS, images, and client-side JS here. |
-| **`.github/workflows/deploy-pages.yml`** | Deploys `public/` to GitHub Pages on push to **`main`**. |
+| **`.github/workflows/deploy-pages.yml`** | Deploys `public/` to GitHub Pages on push to **`main`** or **`master`**. |
 | **`.github/copilot-instructions.md`** | Short norms for **GitHub Copilot** Chat / code review (see also this file). |
 | **`.cursor/rules/*.mdc`** | **Cursor** always-on rules; mirror critical constraints here. |
 | **`CLAUDE.md`** | **Claude Code** entrypoint; it imports this file via `@AGENTS.md`. |
@@ -36,7 +36,7 @@ A **static** website of Gagauz stories, legends, and tales. It is **single-langu
 
 - Hosting is **GitHub Pages** via the workflow above — **no server secrets** in the repo.
 - Use **relative URLs** for internal links and assets (e.g. `./styles.css`, `./images/foo.webp`) so the site works under `https://<user>.github.io/<repo>/` and under a custom domain.
-- Default branch for deployment: **`main`**.
+- Default branch for deployment: **`main`** or **`master`** (workflow listens to both).
 - Prefer **trusted version tags** (e.g. `@v4`) for Actions; keep workflows minimal.
 - Use **`.gitignore`** for `node_modules/`, build output, `.env*`, and editor junk. Do not commit deploy artifacts unless the project intentionally checks in build output.
 

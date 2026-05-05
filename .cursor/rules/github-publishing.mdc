@@ -8,7 +8,7 @@ alwaysApply: true
 See **`AGENTS.md`** at the repo root for the same policies in a form other agents (Codex, OpenCode, Copilot) read.
 
 - **Hosting**: Assume deployment via **GitHub Pages** (static HTML/CSS/JS or a static export from a generator). Prefer **relative URLs** for assets and internal links so the site works under both project Pages (`/repo-name/`) and custom domain roots.
-- **Default branch**: Treat **`main`** as the publishing branch unless `.github` workflows or project docs say otherwise.
+- **Default branch**: The Pages workflow runs on **`main`** or **`master`**; align your default branch with one of these unless workflows say otherwise.
 - **Secrets**: Never commit API keys, tokens, or private keys. Pages for this project should not require server-side secrets in the repo.
 - **Workflows**: If adding GitHub Actions, pin actions to commit SHAs or trusted version tags where reasonable; keep workflows minimal (build + deploy to `gh-pages` or `actions/upload-pages-artifact` pattern as appropriate).
 - **Repository hygiene**: Add a sensible **`.gitignore`** for the stack in use (e.g. `node_modules/`, build output, editor files). Do not commit generated deploy artifacts unless the project explicitly uses a “commit build output” pattern.
