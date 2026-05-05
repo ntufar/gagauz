@@ -20,6 +20,16 @@ h2 {
   margin-top: 2rem;
 }
 
+.story-section {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.35rem;
+}
+
+.story-section:first-of-type {
+  margin-top: 1rem;
+}
+
 a {
   color: inherit;
   text-decoration-thickness: 1px;
