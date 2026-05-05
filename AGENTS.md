@@ -35,7 +35,7 @@ A **static** website of Gagauz stories, legends, and tales. It is **single-langu
 ## GitHub Pages and links
 
 - Hosting is **GitHub Pages** via the workflow above — **no server secrets** in the repo.
-- **GitHub project Pages** (`https://<user>.github.io/<repo>/`): browsers resolve `./masallar/page.html` incorrectly when the site is opened as `…/repo` **without** a trailing slash (links jump to `…/masallar/…` and 404). This site uses **root-absolute paths from the repo** (e.g. `/gagauz/styles.css`, `/gagauz/masallar/…`) so links work in that case. If the repo is renamed or you use a **custom domain at the apex**, replace the `/gagauz/` prefix accordingly (often `/`).
+- **GitHub project Pages** (`https://<user>.github.io/<repo>/`): if Pages is set to **branch + repository root**, GitHub may show `README.md` until a root **`index.html`** exists; this repo has **`index.html`** at the repo root that sends visitors to **`public/index.html`**, plus **`.nojekyll`** so Jekyll does not hide static files. Prefer **Settings → Pages → `/public`** or **GitHub Actions** so the site is served from `public/` without a `/public/` segment in the URL. Browsers also break relative `masallar/…` links when the URL is `…/repo` **without** a trailing slash; **`public/index.html`** includes a tiny script that redirects `…/gagauz` and `…/gagauz/public` to the same path with a trailing slash.
 - Default branch for deployment: **`main`** or **`master`** (workflow listens to both).
 - Prefer **trusted version tags** (e.g. `@v4`) for Actions; keep workflows minimal.
 - Use **`.gitignore`** for `node_modules/`, build output, `.env*`, and editor junk. Do not commit deploy artifacts unless the project intentionally checks in build output.

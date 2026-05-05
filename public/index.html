@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="styles.css" />
     <script>
       /* Project Pages: /gagauz (no slash) breaks relative masallar/ links */
-      if (location.pathname === "/gagauz") {
-        location.replace(location.pathname + "/" + location.search + location.hash);
+      if (
+        location.pathname === "/gagauz" ||
+        location.pathname === "/gagauz/public"
+      ) {
+        location.replace(
+          location.pathname + "/" + location.search + location.hash
+        );
       }
     </script>
   </head>

@@ -7,7 +7,7 @@ alwaysApply: true
 
 See **`AGENTS.md`** at the repo root for the same policies in a form other agents (Codex, OpenCode, Copilot) read.
 
-- **Hosting**: Assume deployment via **GitHub Pages** (static HTML/CSS/JS or a static export from a generator). For **project Pages** (`/repo/`), plain relative `./masallar/…` links can 404 when users land on `…/repo` without a trailing slash; this repo uses **`/gagauz/…`** root paths for internal links/CSS unless you change strategy (see `AGENTS.md`).
+- **Hosting**: Assume deployment via **GitHub Pages** (static HTML/CSS/JS or a static export from a generator). Repo **root** `index.html` + **`.nojekyll`** support branch-root publishing; **`public/`** uses relative links plus a small trailing-slash script (see `AGENTS.md`).
 - **Default branch**: The Pages workflow runs on **`main`** or **`master`**; align your default branch with one of these unless workflows say otherwise.
 - **Secrets**: Never commit API keys, tokens, or private keys. Pages for this project should not require server-side secrets in the repo.
 - **Workflows**: If adding GitHub Actions, pin actions to commit SHAs or trusted version tags where reasonable; keep workflows minimal (build + deploy to `gh-pages` or `actions/upload-pages-artifact` pattern as appropriate).
