@@ -35,7 +35,7 @@ A **static** website of Gagauz stories, legends, and tales. It is **single-langu
 ## GitHub Pages and links
 
 - Hosting is **GitHub Pages** via the workflow above — **no server secrets** in the repo.
-- Use **relative URLs** for internal links and assets (e.g. `./styles.css`, `./images/foo.webp`) so the site works under `https://<user>.github.io/<repo>/` and under a custom domain.
+- **GitHub project Pages** (`https://<user>.github.io/<repo>/`): browsers resolve `./masallar/page.html` incorrectly when the site is opened as `…/repo` **without** a trailing slash (links jump to `…/masallar/…` and 404). This site uses **root-absolute paths from the repo** (e.g. `/gagauz/styles.css`, `/gagauz/masallar/…`) so links work in that case. If the repo is renamed or you use a **custom domain at the apex**, replace the `/gagauz/` prefix accordingly (often `/`).
 - Default branch for deployment: **`main`** or **`master`** (workflow listens to both).
 - Prefer **trusted version tags** (e.g. `@v4`) for Actions; keep workflows minimal.
 - Use **`.gitignore`** for `node_modules/`, build output, `.env*`, and editor junk. Do not commit deploy artifacts unless the project intentionally checks in build output.
