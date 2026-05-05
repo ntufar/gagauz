@@ -5,6 +5,8 @@ alwaysApply: true
 
 # GitHub publishing
 
+See **`AGENTS.md`** at the repo root for the same policies in a form other agents (Codex, OpenCode, Copilot) read.
+
 - **Hosting**: Assume deployment via **GitHub Pages** (static HTML/CSS/JS or a static export from a generator). Prefer **relative URLs** for assets and internal links so the site works under both project Pages (`/repo-name/`) and custom domain roots.
 - **Default branch**: Treat **`main`** as the publishing branch unless `.github` workflows or project docs say otherwise.
 - **Secrets**: Never commit API keys, tokens, or private keys. Pages for this project should not require server-side secrets in the repo.

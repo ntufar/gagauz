@@ -5,6 +5,8 @@ alwaysApply: true
 
 # Gagauz single-language site
 
+Shared, tool-agnostic copy also lives in **`AGENTS.md`** at the repo root; update both when norms change.
+
 - **Audience language**: The site has no language switcher and no parallel locales. All **user-visible** text (navigation, headings, buttons, labels, footers, error messages shown to visitors, `<title>`, `meta description`, Open Graph text) must be **Gagauz**.
 - **Document language**: Root HTML must declare Gagauz, e.g. `<html lang="gag">`. Use **UTF-8** everywhere (`charset="utf-8"`, UTF-8 encoded files) so Gagauz letters and punctuation render correctly.
 - **Stories**: Body text of stories, legends, and tales is **Gagauz** only. Do not add English/Romanian/Russian “summary” blocks unless the user explicitly asks.

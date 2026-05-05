@@ -10,3 +10,7 @@ Gagauz dilinde destanlar, efsaneler hem masallar içün veb-sayt. Repozitoriu ya
 4. Site URLi: `https://<istifadeçi-adı>.github.io/<repo-adı>/` (project Pages).
 
 Sayfa kökü `public/` klasörüdür; buraya HTML, CSS hem görselleri koy.
+
+## Yapay zekâ kömekçileri (Claude Code, Codex, Copilot, OpenCode, Cursor)
+
+Repoda ortak talimatlar **`AGENTS.md`** dosyasında. **Claude Code** başlangıçta **`CLAUDE.md`** üzerinden bunu yüklüyor (`@AGENTS.md`). **GitHub Copilot** içün: **`.github/copilot-instructions.md`**. **Cursor** içün: **`.cursor/rules/*.mdc`**. Bi yeri deñiştiriksen, maslahat: eñ aza **AGENTS.md** hem **copilot-instructions** içindeki kısaca kurallar aynı kalsın.

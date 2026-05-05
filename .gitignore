@@ -15,3 +15,6 @@ dist/
 .vscode/
 *.swp
 *.swo
+
+# Claude Code — şahsi proje tercihleri (repoya koyma)
+CLAUDE.local.md
