@@ -1,5 +1,5 @@
-# Gagauz hikâyeler
+# Gagauz masalları hem destanları
 
-Gagauz dilinde destanlar, efsaneler hem masallar içün veb-sayt. Repozitoriu yalın statik HTML içerir; yayın **GitHub Pages** üzerinden **GitHub Actions** ile yapılır.
+Bu saytda Gagauz halkının masal hem destanları bir araya gelir. Her anlatı ata sözünü, eski günlerin nefesini hem halkın yüreğinden doğan hikmetni taşır.
 
-Sayfa kökü `public/` klasörüdür; buraya HTML, CSS hem görselleri koy.
+Oku, dinle hem Gagauz sözünen gelen bu kıymetli anlatılarda gezip dolaş.
