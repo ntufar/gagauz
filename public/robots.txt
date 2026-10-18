@@ -1,7 +1,0 @@
-# robots.txt for Gagauz destan em masallar
-# Allow all search engines to index all content
-
-User-agent: *
-Allow: /
-
-Sitemap: https://ntufar.github.io/gagauz/sitemap.xml
